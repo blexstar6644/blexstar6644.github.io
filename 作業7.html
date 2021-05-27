@@ -1,0 +1,47 @@
+﻿
+<HTML>
+  <HEAD>
+    <TITLE>示範事件處理程式</TITLE>
+    <SCRIPT LANGUAGE="javascript">
+      function B1()
+      {
+        window.alert("按鈕1");
+      } 
+      function B2()
+      {
+        window.alert("按鈕2");
+      } 
+      function B3()
+      {
+        window.alert("按鈕3");
+      } 
+      function B4()
+      {
+        window.alert("按鈕4");
+      } 
+       function B5()
+      {
+        window.alert("不要摸我 >:(");
+      } 
+      function B6()
+      {
+        window.alert("回來摸我<3");
+      } 
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+      <INPUT TYPE="BUTTON" ID="b1" VALUE="按鈕1"       onclick="javascript:B1();">
+      
+      <INPUT TYPE="BUTTON" ID="b2" VALUE="按鈕2"       onmouseover="javascript:B5();">
+
+      <INPUT TYPE="BUTTON" ID="b3" VALUE="按鈕3"       onmouseup="javascript:B3();">
+      
+      <INPUT TYPE="BUTTON" ID="b4" VALUE="按鈕4"       onmousedown="javascript:B4();">
+
+      <INPUT TYPE="BUTTON" ID="b5" VALUE="按鈕5"       ondblclick="javascript:B2();">
+
+      <INPUT TYPE="BUTTON" ID="b5" VALUE="按鈕6"       onmouseout="javascript:B6();">
+
+
+  </BODY>
+</HTML> 

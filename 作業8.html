@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<SCRIPT LANGUAGE="javascript">
+ 
+function tree(){
+  var node= document.getElementById("count").value;
+for(var i = 1;i <= node ;i++) { 
+for(var j = node; j >= i ; j--){
+document.write("&nbsp;");  
+}
+for(var j = 1; j <= i; j++){
+document.write("*");
+} 
+document.write("<br>");
+}
+
+for(var i = 1;i <= node ;i++) { 
+for(var j = 1;j <= node ;j++){
+document.write("&nbsp;");
+}
+for(var k = node;k <= node ;k++){
+document.write("*");
+} 
+document.write("<br>");
+
+}   
+
+}
+
+
+
+</SCRIPT>
+</head>
+<body>
+<p>
+
+      大小：<input id="count" type="text">
+      <button onclick="tree()">建立</button>
+
+</p>
+</body>
+
+</html>  
